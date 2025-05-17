@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항 작성 폼</title>
+</head>
+
+<style>
+    .layout{
+        width: 500px;
+        margin: 0 auto;
+        margin-top:40px;
+    }
+
+    .layout input {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+    .layout textarea {
+        width: 100%;
+        margin-top: 10px;
+        min-height: 300px;
+    }
+    </style>
+<body>
+    <div class="layout">
+        <form action="/notice/writepro" method="post"> <!--form으로 감쌈. 아래 요소들을 어디로 보낼거냐? -> notice/writepro로 -->
+            <input name="title" type="text">
+            <textarea name="content"></textarea>
+            <button type="submit">작성</button> <!--이 버튼을 누르면 위의 데이터 2개가 폼으로 이동-->
+        </form>
+
+    </div>
+</body>
+</html>
